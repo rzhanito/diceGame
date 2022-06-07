@@ -74,7 +74,7 @@ btnHold.addEventListener('click', () => {
       // 1. add current score to active player's score
       scores[activePlayer] += currentScore
       document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer]
-
+      diceEl.classList.add('hidden')
 
       // 2. check if current score >= 100
       if (scores[activePlayer] >= 100) {
